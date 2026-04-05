@@ -4,8 +4,6 @@ import requests
 from binance.client import Client
 
 # === CONFIG ===
-API_KEY = ""
-API_SECRET = ""
 
 TELEGRAM_TOKEN = "7231685805:AAGlkWIcSn6EtO8lZ5rINtcUZG0CdwTMsuo"
 CHAT_ID = "1936312623"
@@ -13,7 +11,7 @@ CHAT_ID = "1936312623"
 INTERVAL = Client.KLINE_INTERVAL_5MINUTE
 LOOKBACK = 20
 
-client = Client(API_KEY, API_SECRET)
+client = Client()
 
 # === TELEGRAM ===
 def send_telegram(msg):
